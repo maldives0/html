@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/video.css" text="text/css">
+</head>
+
+<body>
+    <div class="vdo">
+        <video width="500" height="700" controls autoplay loop muted poster="/photo/cam01.jpg">
+            <!--           autoplay자동재생
+           loop반복재생
+           muted 음소거-->
+            <source src="/photo/video.mp4" type="video/mp4">
+        </video>
+        <div class="btn">
+            <a>Play</a>
+        </div>
+    </div>
+<script>
+    const vdo= document.querySelector('video');
+    const btn= document.querySelector('.btn a');
+    btn.addEventListener('click', function(){
+        vdo.pause();
+//         vdo.play();
+    });
+    </script>
+
+</body></html>

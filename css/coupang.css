@@ -1,0 +1,40 @@
+@import url('common.css');
+.ph{
+    width:1000px; height:1000px;
+    margin:0;
+    
+}
+.ph img{position:absolute;
+    z-index:2;
+    width:100%;
+    display:block;
+}
+.ph img:nth-of-type(2){
+    position:absolute;
+    z-index:1;
+}
+.ph ul{width:200px; height:200px;
+    margin:0;
+    display:block;
+        position: absolute;
+    top:0px; left:0px;
+    z-index: 100;
+}
+.ph ul li{
+    margin:0;
+    padding:10px;
+   position:relative;
+    left:0; top:0;
+    width:100px; 
+    padding:10px;
+    background: white;
+    border:1px solid black;
+    
+}
+.ph ul li:hover{
+    border:2px solid skyblue;
+}
+.ph ul cam:hover img:nth-of-type(2){
+   
+    z-index:3;
+}

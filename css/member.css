@@ -1,0 +1,52 @@
+@import url('../css/common.css');
+
+.login{
+    border: 10px solid #100;
+    padding:40px;
+    width:700px;
+    margin:100px auto;
+    text-align: center;
+    background:#fff;
+}
+.login h2{
+    
+    text-transform:uppercase;
+    font-size:34px;
+   
+}
+.login p{
+    font-size:.5em;
+}
+.login > div{
+    margin:30px auto;
+    text-align: left;
+    border: 1px solid black;
+}
+.login > div dl{
+   
+}
+.login > div dt{margin:5px; 
+     border-bottom:1px solid black;
+    padding:5px;
+}
+.login > div dd{ border-bottom:1px solid black;
+margin:10px;
+    padding:5px 0;}
+.login > div dd input{
+    float:right;
+}
+.login > div dd:before{
+    content:'';
+    background:url(../photo/ic_arrow.png)  no-repeat;
+    width:15px; height:15px;
+    display:inline-block;
+   
+}
+.login > div dd:last-of-type{border:none;}
+.login > div dl dd p{color:red;
+display:inline;}
+.login > p a{
+background:gray;
+color:white;
+padding:10px 15px;
+}

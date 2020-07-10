@@ -1,0 +1,155 @@
+@import url('/css/common.css');
+
+html,body{
+    background:none;
+}
+article{width:100%; height:100%;
+position:relative;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+}
+article h2{
+    text-align:center;
+    font-size:2em; margin-bottom:40px;
+}
+article div{width:500px; margin:0 auto;
+}
+article div img{
+    width:100%;
+}
+
+.t_1{}
+.t_1 div{
+    
+    overflow:hidden;
+}
+.t_1 div img{
+    transition:transform 1.5s cubic-bezier(0,.71,0,-0.76), opacity 1s 1s;
+/*    크기 거지는 속도와 투명해지는 속도를 다르게 설정한다
+    1s 뒤에 1s는 딜레이 속도
+    ease-in는 시작지점이 느려지고 끝나는 지점 빨라진다
+    out은 반대
+    linear 처음과 끝나는 속도 일정하게*/
+}
+.t_1 div:hover img{
+    transform: scale(2);
+/*    이미지 크기 두배*/
+    opacity:.5;
+    
+}
+
+.t_2{}
+.t_2 div{
+    
+    border:1px solid #000;
+    
+}
+.t_2 div img{
+    transition:.9s;
+    transform-origin:50% 0%;
+/*    회전할 때 기준점 left bottom*/
+/*    가로 X축의 0%부터 100%까지*/
+/*    세로 y축의 0%부터 100%까지*/
+}
+.t_2 div:hover img{
+    transform: rotate(-20deg);
+
+    
+    
+}
+
+
+
+.t_3 div{
+    
+    border:1px solid #000;
+    perspective:2000px;
+    background:#fff;
+}
+.t_3 div img{
+    transition:.9s;
+   
+}
+.t_3 div:hover img{
+    transform: rotateY(30deg) scale(.7);
+    
+}
+.t_3{
+    background:#eee;
+    transition:.5s;
+    transform-origin: center bottom;
+    
+}
+.t_3:hover{
+    
+    transform: perspective(3000px) rotateY(10deg);
+    숫자가 커질수록 차이가 적어진다
+}
+
+
+.t_4 h2{
+    position:relative;
+    font-size:100px;
+}
+.t_4 h2:after{
+    content:'Transform(Rotate & Skew)';
+    position:absolute;
+    left:0; top:0;
+    color:rgba(0,0,0,0.4);
+    transform-origin: left bottom;
+   transform:
+       perspective(1000px) 
+       translateX(-90px) 
+       skewX(-45deg) 
+       rotateX(-40deg);
+/*    translateX 자신의 width 사이즈를 알고 있다 그 크기가 100%*/
+    filter:blur(5px);
+}
+.t_4 div{
+    
+    border:1px solid #000;
+   
+}
+.t_4 div img{
+    transition:.9s;
+   
+}
+.t_4 div:hover img{
+    transform: skew(20deg,20deg);
+/*    기울기*/
+    
+}
+
+.t_5 div{
+    
+    border:1px solid #000;
+   
+}
+.t_5 div img{
+    transition:.9s;
+   
+}
+.t_5 div:hover img{
+    transform: translate(-3%,-3%);
+box-shadow: 10px 10px 10px rgba(0,0,0,0.4);
+    
+}
+
+.t_6 div{
+   
+  
+ 
+}
+.t_6 div img{
+    transition:.9s;
+     transform-origin: bottom;
+    transform:rotateX(80deg) skew(30deg);  
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.4);
+}
+.t_6 div:hover img{
+   transform-origin: bottom;
+    transform:perspective(1000px)  ;
+}
+

@@ -1,0 +1,41 @@
+@import url('common.css');
+body, html{background: none;}
+.vdo{
+        width:100%; height: 100vh;
+        position:relative;
+        overflow: hidden;
+}
+.vdo video{
+    position: absolute;
+    left:0; top:0;
+    width:100%; height:100%;
+    z-index: -1;
+    transform:scale(1.4);
+}
+.btn{
+    position: absolute;
+    top:50%; left:50%;
+    transform:translate(-50%, -50%);
+    
+}
+.btn a{
+    width:100px; height:100px;
+    background:rgba(255,255,255,0.4);
+        display:block;
+    border-radius:100%;
+    text-align: center;
+    line-height:100px;
+    transition:.5s;
+    cursor:pointer;
+/*    손가락 모양 포인터*/
+}
+.vdo:hover .btn a{
+    background:rgba(255,255,255,0.8);
+    box-shadow: 
+      0px 0px 10px 5px rgba(0,255,255,0.6),
+       0px 0px 10px 6px rgba(255,255,0,0.6),
+        
+        inset 0px 0px 10px 6px rgba(0,255,0,0.6),
+        inset 0px 0px 10px 6px rgba(255,0,0,0.6);
+/*   inset안쪽그림자 10px번짐효과, 5px선명까지는 선명하고 뒤에 블러효과*/
+}

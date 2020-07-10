@@ -1,0 +1,71 @@
+@import url('../css/common.css');
+
+.cam {
+    width: 1850px;
+    margin: 0 auto;
+}
+
+.cam h1 {
+    margin: 100px auto;
+    text-align: center;
+    
+}
+
+.cam h1::after{
+    content:'';
+        display:block;
+    clear:both;
+    border-bottom:2px solid black;
+    width:10px;
+    margin:50px auto;
+}
+
+
+.cam p {
+    margin: 100px auto;
+    text-align: center;
+    white-space: pre-line;
+}
+
+.cam ul {
+    width: 2000px;
+    margin: 50px auto;
+    padding:0 100px;
+   
+}
+
+.cam ul::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.cam li {
+    width:500px;
+    margin: 10px 30px;
+         float: left;
+     position:relative;
+     overflow: hidden;
+}
+
+.cam li img {
+    width: 100%;
+   
+}
+
+.cam li p {
+    width: 500px; height: 400px; 
+    text-align:center;
+    vertical-align: bottom;
+    position:absolute;
+    margin:0;
+    padding:200px;
+    left: 0;    bottom: -500px;
+    color: white;
+    background: black;
+    opacity: 0.4;
+    transition: .5s;
+}
+
+.cam li:hover p{bottom:0px;}
+.cam li:hover img{width:100%;}

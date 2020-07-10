@@ -1,0 +1,59 @@
+@import url('common.css');
+
+.grid{
+    width:1000px;
+display:grid;
+grid-template-columns:200px 500px 200px;
+grid-gap:50px;}
+
+.grid div{
+    background:beige;
+    border:1px solid #000;
+    height:100px;
+}
+
+.grid div:nth-of-type(1){
+    grid-column:1/3;
+/*    1 시작기준점부터 3기준점까지, 4기준점까지 있다*/
+}
+.grid div:nth-of-type(2)
+{
+    grid-column:3;
+    grid-row:1/5;
+    height:auto;
+}
+
+@media (-ms-high-contrast: none),
+    (-ms-high-contrast: active){
+        .grid{
+           
+            width:1000px;
+            display:flex;
+            flex-wrap:wrap;
+        }
+        .grid div:nth-of-type(1){
+            width:600px;
+             
+        }
+         .grid div:nth-of-type(2){
+             height:500px;
+           
+            
+        }
+        
+        .grid div{
+            width:200px;
+            margin-bottom:50px;
+            float:left;
+        }
+        .grid div:nth-of-type(3n-1){
+           margin:0 50px;
+        }
+       
+}
+/*explore 사용자 범위를 고려할 경우 grid가 안 될 때 추가 작업 필요
+많이 사용하지 않는다*/
+    margin-top:10px＼9; /*ie8/9*/
+*margin-top:10px;/*ie 7*/
+_margin-top:10px;/*ie 6*/
+/*IE핵*/

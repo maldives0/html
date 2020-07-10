@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/transform3d.css" text="text/css">
+</head>
+
+<body>
+<article class="t3d_1 ">
+<!--id="t3d_1" 복수 사용  안됨, class보다 우선순위가 높다-->
+<h2>Transform-style 3d
+<button class="btn">stop</button>
+</h2>
+<div class="paused">
+    <p>company</p>
+    <p>service</p>
+    <p>custom</p>
+    <p>board</p>
+</div>
+</article>
+
+<script>
+    const item = document.querySelector('.t3d_1 div');
+        const btn = document.querySelector('.btn');
+    btn.addEventListener('click',function(){
+                        item.classList.toggle('paused');
+                        });
+//    btn에 EventListener이벤트를 감지하는 메소드를 add 하라 
+//    클릭하면 function 일어나는 일은 아티클 itemㅇ의 classList를 ㄱ클레스 이름('paused')에 추가하라
+//   toggle 한 개의 버튼으로 멈췄다 실행했다 한다
+    </script>
+    
+    
+    <article class="t3d_2 ">
+<!--id="t3d_1" 복수 사용  안됨, class보다 우선순위가 높다-->
+<h2>Transform-style 3d
+</h2>
+<div class="paused">
+    <p>01</p>
+    <p>02</p>
+    <p>03</p>
+   
+</div>
+</article>
+   
+    <article class="t3d_ex ">
+<!--id="t3d_1" 복수 사용  안됨, class보다 우선순위가 높다-->
+<h2>Transform-style 3d
+</h2>
+<div class="paused">
+    <p>01</p>
+    <p>02</p>
+    <p>03</p>
+    <p>04</p>
+    <p>05</p>
+    <p>06</p>
+    <p>07</p>
+    <p>08</p>
+    <p>09</p>
+   <p>10</p>
+    <p>11</p>
+    <p>12</p>
+    <p>13</p>
+    <p>14</p>
+    <p>15</p>
+    <p>16</p>
+</div>
+</article>
+    
+</body></html>

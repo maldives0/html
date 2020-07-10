@@ -1,0 +1,195 @@
+/*s1 */
+.s1 {
+    border: 1px solid #f00;
+    /*           overflow:hidden;*/
+    /*           나의 사이즈 영역을 벗어나는 자식요소를 감춰라, 추천X*/
+}
+
+.s1:after {
+    content: 'after';
+    display: block;
+    clear: both ;
+    border: 1px solid #00f;
+    width: 300px;
+}
+
+/* after    뒤로 붙이기*/
+.s1 p {
+    float: left;
+}
+
+/*위로올리기*/
+.s1 span {
+    position: relative;
+    top: 40px;
+    left: 300px;
+    border: 1px solid #100;
+}
+
+</style > 
+
+/*s2 */
+.s2 {
+    margin: 100px auto;
+    width: 80%;
+    background: #eee;
+}
+
+.s2:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.s2 > div {
+    /*        div가 자식 손자까지 있을 때 가장 최측근 div에게 명령함
+        s2>div:nth-of-type(2)- 두번째 div와 같은 방법으로 지정할 수도 있다*/
+    border: 1px solid #000;
+    padding: 20px;
+    width: 45%;
+    height: 400px;
+    /*       전체 합은 50%+20px+2px*/
+
+
+
+    overflow: hidden;
+
+
+    box-sizing: border-box;
+    /*        보더, 페딩에게 지정된 사이즈 영역 안에서 처리되어라*/
+}
+
+.s2 .left {
+    float: left
+}
+
+/*    좌측정렬*/
+.s2 .right {
+    float: right;
+}
+
+/*    우측정렬*/
+
+/*s3*/
+* {
+    box-sizing: border-box;
+}
+
+/*    *(모든 요소) box의 크기를 갖는다*/
+.s3 {
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+.s3:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.s3 > div:nth-of-type(1) {
+    width: 30%;
+    height: 960px;
+    background: #222;
+    float: left;
+    padding: 0 40px;
+}
+
+.s3 > div:nth-of-type(1) h1 {
+    color: #fff;
+    padding: 60px 0;
+}
+
+.s3 > div:nth-of-type(1) ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.s3 > div:nth-of-type(1) ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #555;
+}
+
+.s3 > div:nth-of-type(1) ul li a {
+    color: #ddd;
+    text-decoration: none;
+    padding: 10px 0;
+    display: block;
+    /*              링크의 범위를 넓게 만들기 display값은 inline-block도 된다, block은 width 값이 자동으로 설정된다*/
+
+
+    text-transform: uppercase;
+    /*           capitalize 앞 글자 대문자로 변형
+            uppercase 모두 대문자 변형
+            lowercase 소문자변형*/
+
+
+}
+
+.s3 > div:nth-of-type(1) ul li:hover a {
+    background: #333;
+}
+
+
+.s3 > div:nth-of-type(1) ul li a:before {
+    content: '';
+    width: 10%;
+    height: 1px;
+    background: #ddd;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    transition: .5s;
+
+    /*            before앞으로 붙이기
+            before/after는 가상의 테그 디자인적 요소 해결하기 위해 만들어짐, 인라인 요소*/
+    /*
+            block은 위에 밑줄이 그어짐
+            inline-block은 하단을 기준으로 정렬됨
+            vertical-align로 정렬 설정
+*/
+}
+
+.s3 > div:nth-of-type(1) ul li:hover a:before {
+    width: 50%;
+}
+
+.s3 > div:nth-of-type(2) {
+    width: 60%;
+    float: right;
+    background: #f5f5f5;
+    transition: .5s;
+    /*            어떠한 값이 변형될 때 내가 준 속도값(0.5초)만큼 시작할 때 변형이 이루어진다*/
+    padding: 40px
+}
+
+.s3 > div:nth-of-type(2) h2 {}
+
+.s3 > div:nth-of-type(2) ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0;
+
+}
+
+.s3 > div:nth-of-type(2) ul li {
+    width: 30%;
+    float: left;
+/*    display: inline-block 대신 float;*/
+    
+    margin: 20px 5% 20px 0;
+}
+
+.s3 > div:nth-of-type(2) ul li:nth-of-type(3n) {
+    margin-right: 0;
+
+}
+
+.s3 > div:nth-of-type(2) ul li img {
+    width: 100%;
+}
+
+ 

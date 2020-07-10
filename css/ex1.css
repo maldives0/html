@@ -1,0 +1,281 @@
+@import url('common.css');
+
+.ex1{width:640px;
+   
+
+margin:0 auto;}
+.ex1 h1{margin:10px auto;
+}
+.ex1 span{
+    display:flex;
+             align-items: center;
+   }
+   
+.ex1 span p{
+    width:200px; height:200px;
+border:1px solid #000;
+    text-align: center;
+    margin:5px;
+    padding:80px 0;
+    
+  
+}
+
+.ex2{width:700px;
+margin:10px auto;
+    
+}
+
+.ex2 span{
+    width:640px;
+    margin:10px auto;
+   
+    white-space:pre-line;
+    text-align:center;
+    border:1px solid #000;
+    display: flex;
+    vertical-align: center;
+    align-items:center;
+    
+}
+.ex2 span h1{margin:10px 0;}
+.ex2 span ul{
+    margin:0 auto;
+    padding:50px;
+     
+}
+.ex2 span ul strong{
+        font-size:1.5em;
+}
+.ex2 span ul a{
+        margin:0 auto;
+    padding:5px 10px;
+    border:1px solid #000;
+    
+}
+
+.ex3{width:640px;
+margin:0 auto;
+}
+.ex3 h1{margin:10px auto;
+}
+.ex3 span{
+    display:flex;
+    vertical-align: center;
+     align-items: center;
+    
+}
+   
+.ex3 span p{
+    width:200px; height:160px;
+border:1px solid #000;
+   margin:5px;
+        text-align: center;
+   padding:70px 0;
+}
+.ex3 span p:nth-of-type(1){
+    width:200px; height:200px;
+    padding:80px 0;
+}
+
+.ex4{width:900px;
+margin:0 auto;}
+.ex4 h1{margin:10px;}
+.ex4 span{width:860px;
+padding:0;
+float:left;}
+.ex4 span p{
+     width:400px; height:200px;
+    border:1px solid #000;
+    padding:50px 0;
+    text-align:center;
+    display:block;
+    white-space:pre-line;
+}
+.ex4 span p:nth-of-type(1){
+    float:left;
+}
+
+.ex4 span p:nth-of-type(2){
+    float:right
+}
+
+.ex5{width:300px;
+margin:0 auto;
+text-align: center;
+    position:relative;
+ }
+.ex5 h1{}
+
+.ex5 p{
+    color:white;
+    font-size:1.2em;
+    font-style:bold;
+    padding:0;
+    border:10px solid red;
+    border-radius:100%;
+        background: red;
+        position:absolute;
+    left:40px; bottom:0;
+    
+     }
+
+.ex5 img{ width:200px; height:200px;  
+    border:10px solid red;
+    border-radius:30px;
+    
+}
+
+.ex6{width:500px;
+margin:0 auto;
+    text-align:center;
+}
+.ex6 h1{}
+.ex6 ul{width:490px;
+    margin:0; padding:0;
+    display:flex;
+        
+       }
+   
+.ex6 ul li{
+    background:url('/photo/cam03.jpg') no-repeat;
+        width:200px; height:200px;
+   margin:20px;
+    border:1px solid #000;
+    position:relative;
+   
+}
+.ex6 ul li:nth-of-type(2){
+    overflow:hidden;
+}
+.ex6 ul li p{
+    background: rgba(0,0,0,0.4);
+    color:white;
+    width:200px; height:200px;
+    position:absolute;
+    left:0; bottom:-110%;
+    padding:70px;
+    
+}
+.ex6 ul li:nth-of-type(1):after{
+    content:'200*200';
+    position:absolute;
+    left:30%; bottom:-20px;
+    
+}
+.ex6 ul li:nth-of-type(2):hover p{
+             bottom:0;
+    transition:.5s;
+    
+    
+}
+
+.ex7{width:500px;
+margin:0 auto;
+   
+}
+.ex7 h1{ text-align:center;
+}
+.ex7 h1 p{
+    color:red;
+    display:inline;
+}
+.ex7 ul{width:500px;
+    margin:0; padding:0;
+    display:flex;
+        
+       }
+   
+.ex7 ul li{
+    background:url('/photo/cam03.jpg') no-repeat;
+        width:200px; height:200px;
+    display:inline-block;
+   margin:20px;
+    border:1px solid #000;
+    position:relative;
+   
+}
+.ex7 ul li:nth-of-type(2){
+     overflow: hidden;
+   
+}
+
+
+.ex7 ul li:nth-of-type(1):after{
+    content:'200*200';
+    position:absolute;
+    left:40%; bottom:-20px;
+   
+    
+}
+.ex7 ul li:nth-of-type(2):after{
+    content:'hover';
+    position:absolute;
+    left:40%; bottom:-20px;
+   
+}
+
+.ex7 ul li:nth-of-type(2):hover img{
+     width:500%;
+  
+}
+
+
+
+.ex8{width:500px;
+margin:0 auto;
+}
+.ex8 h1{
+    text-align: center;
+}
+.ex8 h1 p{
+    color:red;
+    display:inline;
+}
+.ex8 span{
+    border:1px solid black;
+    width:200px; height:200px;
+    margin:10% 30%;
+    padding:0;
+    position:relative;
+   
+}
+.ex8 span img{
+    width:200px; height:200px;
+    position:absolute;
+    left:20%;
+    transform:rotate(45deg);
+}
+
+.ex8 span:after{
+    content:'200*200';
+    position:absolute;
+    left:30%;
+    bottom:-30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,285 @@
+@import url('/css/common.css');
+
+html,
+body {
+    background: none;
+}
+
+article {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+article h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 40px;
+}
+
+.t3d_1 {}
+
+.t3d_1 div {
+    width: 400px;
+    height: 500px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: .9s;
+}
+
+.t3d_1 div p {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+
+
+
+}
+
+.t3d_1 div p:nth-of-type(1) {
+    transform: rotateY(0deg) translateZ(-200px);
+    background: red;
+}
+
+.t3d_1 div p:nth-of-type(2) {
+    transform: rotateY(90deg) translateZ(-200px);
+    background: blue;
+}
+
+.t3d_1 div p:nth-of-type(3) {
+    transform: rotateY(180deg) translateZ(-200px);
+    background: green;
+}
+
+.t3d_1 div p:nth-of-type(4) {
+    transform: rotateY(270deg) translateZ(-200px);
+    background: gray;
+}
+
+/*
+.t3d_1 div:hover{
+    transform:perspective(2000px) rotateY(180deg);
+}*/
+.t3d_1 div {
+    animation: site 1.5s 1s linear infinite alternate;
+    /*    animation-name:site; 애니메이션 이름
+    animation-duration:2s; 애니메이션 속도
+    animation-delay: 1s; 뒤에 나타남 
+    animation-play-state:paused; 애니메이션을 pause 멈춰라 running 실행하라 /버튼 클릭했을 때 멈추어 있도록 다시 클릭하면 시작하도록 하는데 쓰인다
+    animation-timing-function:linear; 일정속도 유지
+    animation-fill-mode:forwards;    0~100% 정지
+    forwards 260도에서 끝나며 갑자기 처음으로 돌아간다
+    animation- interation-count:infinite
+    infinite 계속 이어진다
+    숫자 애니메이션 반복횟수
+     animaiton-direction: alternate;
+    infinite alternate 0에서 100갔다가 100에서 0으로 돌아옴
+   
+    */
+}
+
+.t3d_1 div.paused {
+    animation-play-state: paused;
+}
+
+/*.t3d_1 div.running{animation-play-state:running;}*/
+
+.btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+@keyframes site {
+    0% {
+        transform:
+            rotateX(180deg) rotateY(0deg);
+    }
+
+    100% {
+        transform:
+            rotateX(0deg) rotateY(160deg);
+
+    }
+}
+
+/*0%시작지점 100%끝지점*/
+
+.t3d_2 {
+    perspective: 3000px;
+}
+
+.t3d_2 div {
+    width: 700px;
+    height: 300px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: .9s;
+    transform: rotateX(-5deg);
+}
+
+.t3d_2 div p {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+      transition:.5s;
+}
+
+.t3d_2 div p:nth-of-type(1) {
+    background: skyblue;
+    transform: rotateY(0) translateZ(350px);
+}
+
+.t3d_2 div p:nth-of-type(2) {
+    background: pink;
+    transform: rotateY(120deg) translateZ(350px);
+}
+
+.t3d_2 div p:nth-of-type(3) {
+    background: brown;
+    transform: rotateY(240deg) translateZ(350px);
+}
+
+.t3d_2 div {
+    animation: ban 1s linear forwards;
+}
+
+/*steps(10) 10단계로 나누어 보여주어라*/
+@keyframes ban {
+
+    0%,    10% {
+        transform: rotateX(-5deg) rotateY(0deg)
+    }
+
+/*
+    30%,    40% {
+        transform:rotateX(-5deg) rotateY(120deg)
+    }
+
+    60%,    70% {
+        transform:rotateX(-5deg) rotateY(240deg)
+    }
+*/
+
+    90%,100% {
+        transform: rotateX(-5deg) rotateY(360deg)
+    }
+}
+
+.t3d_2 div:hover p:nth-of-type(1){
+      transform-origin:bottom;
+      transform:rotateY(0deg) translateZ(200px);
+}
+.t3d_2 div:hover p:nth-of-type(2){
+      transform-origin:bottom;
+      transform:rotateY(120deg) translateZ(200px);
+}
+.t3d_2 div:hover p:nth-of-type(3){
+      transform-origin:bottom;
+      transform:rotateY(240deg) translateZ(200px);
+}
+
+.t3d_ex{}
+.t3d_ex div{width: 300px;
+    height: 300px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: .9s;
+    transform: rotateX(50deg);
+animation: ex 9s linear infinite;}
+@keyframes ex{
+    0%{
+        transform:rotateX(5deg) rotateY(10deg)
+    }
+    100%{
+        transform:rotateX(330deg) rotateY(290deg)
+    }
+}
+.t3d_ex div p{
+     width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+      transition:.5s;
+}
+.t3d_ex div p:nth-of-type(1) {
+    background: red;
+    transform: rotateX(40deg) rotateY(40deg) translateZ(400px);
+}
+
+.t3d_ex div p:nth-of-type(2) {
+    background: blue;
+    transform: rotateX(500deg) rotateY(500deg) translateZ(-400px);
+}
+
+.t3d_ex div p:nth-of-type(3) {
+    background:  white;
+    transform: rotateX(360deg) rotateY(360deg) translateZ(-400px);
+}
+
+.t3d_ex div p:nth-of-type(4) {
+    background:  skyblue;
+    transform: rotateX(45deg) rotateY(45deg) translateZ(-400px);
+}
+.t3d_ex div p:nth-of-type(5) {
+    background:  black;
+    transform: rotateX(60deg) rotateY(60deg) translateZ(400px);
+}
+.t3d_ex div p:nth-of-type(6) {
+    background:  purple;
+    transform: rotateX(90deg) rotateY(90deg) translateZ(-400px);
+}
+.t3d_ex div p:nth-of-type(7) {
+    background:  pink;
+    transform: rotateX(122.5deg) rotateY(122.5deg) translateZ(400px);
+}
+.t3d_ex div p:nth-of-type(8) {
+    background:  brown;
+    transform: rotateX(135deg) rotateY(135deg) translateZ(-400px);
+}
+.t3d_ex div p:nth-of-type(9) {
+    background:  yellow;
+    transform: rotateX(157.5deg) rotateY(157.5deg) translateZ(400px);
+}
+.t3d_ex div p:nth-of-type(10) {
+    background:  orange;
+    transform: rotateX(180deg) rotateY(180deg) translateZ(-400px);
+}
+.t3d_ex div p:nth-of-type(11) {
+    background: #cf137d;
+    transform: rotateX(202.5deg) rotateY(202.5deg) translateZ(400px);
+}
+
+.t3d_ex div p:nth-of-type(12) {
+    background: #0b521a;
+    transform: rotateX(225deg) rotateY(225deg) translateZ(-400px);
+}
+
+.t3d_ex div p:nth-of-type(13) {
+    background:  #52310b;
+    transform: rotateX(247.5deg) rotateY(247.5deg) translateZ(400px);
+}
+
+.t3d_ex div p:nth-of-type(14) {
+    background:  #8aba23;
+    transform: rotateX(270deg) rotateY(270deg) translateZ(-400px);
+}
+.t3d_ex div p:nth-of-type(15) {
+    background:  #3a9e98;
+    transform: rotateX(292.5deg) rotateY(292.5deg) translateZ(400px);
+}
+.t3d_ex div p:nth-of-type(16) {
+    background:  #9823ba;
+    transform: rotateX(315deg) rotateY(315deg) translateZ(-400px);
+}

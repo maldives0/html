@@ -1,0 +1,42 @@
+@import url('../css/common.css')
+    .profile{}
+.profile dl{
+    font-size:0;
+}
+.profile dl dt,
+.profile dl dd{display:inline-block;
+
+font-size:1rem;
+margin:0;
+vertical-align:top;
+border:1px solid #000;}
+.profile dl dt{}
+.profile dl dt:after{content:':';
+padding: 0 10px;
+display:inline-block;}
+.profile dl dd{}
+
+.news{}
+.news dl{
+    
+}
+.news dl dt{
+  
+}
+.news dl dd{  margin:0;}
+.news dl dd:before{
+    content:'ㄴ';
+    display:inline-block;
+}
+
+
+.ex{width:80%;
+margin:100px auto;}
+.ex dt{
+    font-weight: bold;
+     display:inline;
+}
+.ex dd{
+    display:inline;
+    margin:0;
+}

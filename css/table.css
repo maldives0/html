@@ -1,0 +1,31 @@
+.t_1{
+/*  속성  display:table;
+    인라인처럼 내용만큼 가로가 늘어남
+    grid 가로 세로 기준선이 고정되어 있음*/
+    border-collapse: collapse;
+/*    라인 두께가 사라짐*/
+}
+.t_1 th, 
+.t_1 td{border:1px solid #000;}
+.t_1 td:first-child{
+/*td 첫번째 줄을 지칭함*/
+    width:200px;
+height:100px;
+    vertical-align:top;
+    text-align:center;
+}
+
+.t_2{
+    margin:100px auto;
+    width:80%;
+}
+.t_2 caption{
+    text-align:left;
+    border-bottom: 2px solid:#555;
+}
+.t_2 thead th{}
+
+.t_2 tbody th{}
+.t_2 tbody td{}
+
+.t_2 tfoot td{}

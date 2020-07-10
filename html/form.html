@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/form.css" text="text/css">
+</head>
+
+<body>
+   
+    <form name="member" action="http://naver.com">
+       <fieldset class="member">
+<!--       그룹으로 묶기-->
+       <legend>회원정보입력</legend>
+<!--    fieldset의 제목-->
+       
+        <ul >
+           
+            <li>
+<!--       placeholder에 값이 적히므로 없어도 됨         <label for="">이름</label>-->
+                <label for="n">이름</label>
+                <input type="text" name="name" required placeholder="이름"
+                size="60"
+                id="n">
+<!--              <label for="n">이름</label>, id="n" 이름을 클리하면 깜박이는 커서가 나타난다-->
+            </li>
+            
+             <li>
+                   <label for="">비밀번호</label>
+                <input type="password" name="pw" placeholder="비밀번호">
+                    </li>
+                    
+                     <li>
+                   <label for="">성별</label>
+                남 <input type="radio" value="m" name="g" checked>
+                   여 <input type="radio" value="f" name="g">
+                    </li>
+<!--                    이름이 같아야 남을 선택했을 때 여의 값이 사라진다-->
+                    
+                    <li>
+                   <label for="">파일첨부</label>
+                <input type="file" name="upload" >
+                    </li>
+                    
+                    <li>
+                     <label for="">취미</label>
+                수영<input type="checkbox" name="h" value="swimming">
+                  영화보기<input type="checkbox" value="movie" name="h[]">
+<!--                  값을 동시에 여러개 넘겨야 될 때는 []를 한다
+                 radio, checkbox는 value값이 없다(사용자가 입력한 정보)-->
+                  음악감상<input type="checkbox" value="music" name="h[]">
+                  탱고<input type="checkbox" name="h[]" value="tango">
+                  독서<input type="checkbox" name="h[]" value="read">
+                   
+                     </li>
+                     <li>
+                   <label for="">내용</label>
+                <textarea name="" id="" cols="60" rows="10"></textarea>
+                    </li>
+<!--                    input은 무조건 한줄, textarea는 여러줄 가능-->
+                    
+                    <li>
+                   <label for="">가입경로</label>
+                <select name="" id="">
+                    <option value="">
+                        인터넷
+                    </option>
+                    <option value="">
+                        친구
+                    </option>
+                    <option value="">
+                        이벤트
+                    </option>
+                    <option value="">
+                        기타
+                    </option>
+                </select>
+                    </li>
+                    
+                    <li>
+                    <input type="submit" value="저장">
+                    </li>
+               
+        </ul>
+        
+        
+        
+<!--        html5 form요소-->
+       <ul>
+           <li>
+              <label for="">색상</label>
+               <input type="color" value="#000">
+           </li>
+           <li>
+              <label for="">숫자</label>
+               <input type="number" min="1" max="10" value="1">
+           </li>
+           <li>
+              <label for="">날짜, 시간</label>
+               <input type="date" >
+                 <input type="time" >
+                 <input type="datetime-local" >
+           </li>
+           <li>
+              <label for="">이메일</label>
+               <input type="email" >
+           </li>
+           <li>
+              <label for="">검색</label>
+               <input type="search" >
+           </li>
+           <li>
+              <label for="">전화</label>
+               <input type="tel" >
+           </li>
+           <li>
+              <label for="">url</label>
+               <input type="url" >
+           </li>
+       </ul>
+        </fieldset>
+    </form>
+   
+    
+</body>
+
+</html>

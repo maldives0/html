@@ -1,0 +1,51 @@
+@import url('../css/common.css');
+
+.login{
+    border: 10px solid #100;
+    padding:40px;
+    width:700px;
+    margin:100px auto;
+    text-align: center;
+    background:#fff;
+}
+.login h2{
+    margin-bottom:40px;
+    text-transform:uppercase;
+    font-size:34px;
+   
+}
+.login > div{}
+.login > div p{}
+.login > div p:nth-of-type(1){ }
+.login > div p:nth-of-type(1) input{
+    width:100%;
+        padding:15px;
+    border:none;
+        border-top:1px solid #ddd;
+       
+}
+.login > div p:nth-of-type(2){
+    text-align:right;
+      border-top:1px solid #ddd;
+    padding-top:10px;
+    
+}
+.login > div p:nth-of-type(3){}
+    .login > div p:nth-of-type(3) a{
+        background:#555;
+        padding:14px 30px;
+        color:#fff;
+        display:inline-block;
+}
+
+.login > p{margin-top:60px;}
+.login > p a{text-decoration:underline;
+font-size:.7em;}
+.login > p a:after{
+    content:'|';
+    display:inline-block;
+    padding:0 10px;
+}
+.login > p a:last-of-type:after{
+    content:'';
+}

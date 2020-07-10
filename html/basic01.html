@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>momo</title>
+</head>
+
+<body>
+
+    <!--   block요소-->
+    <style>
+        body {
+            margin: 200px;
+        }
+
+        /*        여백*/
+        div.a {
+            border: 1px solid #000000;
+            /*            선그리기*/
+            width: 500px;
+            /*            가로사이즈*/
+            margin-left: 100px;
+            margin-top: 100px;
+            /*            위치이동*/
+            text-align: center;
+            /*            텍스트 가운데 정렬*/
+
+        }
+
+
+        div.a p {
+            color: #999;
+        }
+
+        /*        a 다음에 한 칸 뛰고 p
+        색 16진법 사용 6자리 RGB*/
+
+        div.a h1 {
+            font-size: 60px;
+        }
+
+
+        div.b {
+            border: 20px solid #434678;
+            width: 400px;
+            margin-left: 150px;
+            margin-top: 240px;
+            text-align: end;
+        }
+
+        div.b p {
+            color: #365454
+        }
+
+        div.b h1 {
+            font-size: 89px;
+        }
+
+    </style>
+
+    <div class="a">
+        <!--       이름 붙여주기-->
+        <h1>HTML</h1>
+        <p>html tag 기초 학습 </p>
+    </div>
+
+    <div class="b">
+        <h1>HTML</h1>
+        <p>html tag 기초 학습 </p>
+
+    </div>
+    <hr>
+
+    <!--inline 요소-->
+
+    <style>
+        div.box {
+            width: 340px;
+            border: 1px solid #001;
+            font-size:0px;
+           
+
+            margin: 0;
+            /*        left,right,top,bottom*/
+            margin: 0 auto;
+            /*top&bottom, left&right*/
+
+            /*
+        margin-left:auto;
+        margin-right:auto;
+*/
+            /*        좌우측만 auto가 가능함*/
+        }
+
+        div.box img {
+            width: 100px;
+            margin-right: 10px;
+        }
+
+        div.box .last {
+            margin-right: 0;
+        }
+/*마지막 여백 없애기*/
+    </style>
+
+    <div class="box">
+
+        <a href="http://www.naver.com" target="_blank">
+            <img src="p02-05-05.jpg" alt="사과" title="사과지">
+        </a>
+        <!--    링크걸기테그-->
+
+        <img src="p02-05-05.jpg" alt="사과" title="사과지">
+
+        <img src="p02-05-05.jpg" alt="사과" title="사과지" class="last">
+
+    </div>
+
+    <hr>
+    <!--block of inline 차이점-->
+    <style>
+        .block_inline {}
+
+        .block_inline p {
+            width: 100px;
+            height: 100px;
+            background: #0f6;
+            border: 1px solid #f00;
+            margin: 100px;
+            padding: 20px;
+
+        }
+
+        .block_inline span {
+            width: 100px;
+            height: 100px;
+            background: #0FF;
+            border: 1px solid #f00;
+            margin: 100px;
+        
+            display: inline-block;
+        }
+
+    </style>
+    <div class="block_inline">
+        <p>block
+            <br>block</p>
+
+
+        <span>inline
+            <br>inline
+            <!--    한줄 밑으로 내리기-->
+        </span>
+
+        <span>inline
+            <br>inline
+            
+        </span>
+
+    </div>
+
+
+
+</body>
+
+</html>

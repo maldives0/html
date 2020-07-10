@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <link href="/css/gradient.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+
+
+<article class="g_1">
+    <h2>
+        linear-gradient
+       
+    </h2>
+    
+    <div></div>
+    
+</article>
+<article class="g_2">
+    <h2>
+       radial-gradient
+    </h2>
+    
+    <div></div>
+    
+</article>
+   <article class="g_3">
+    <h2>
+       conic-gradient
+       
+    </h2>
+    
+    <div></div>
+    
+</article>
+ <article class="g_4">
+    <h2>
+       transform-card
+       
+    </h2>
+    
+    <figure>
+       <p> <img src="../photo/unbrella.webp" alt=""></p>
+       <figcaption>이미지 설명</figcaption>
+   </figure>
+    
+</article>
+
+
+
+
+<script>
+    const g3= document.querySelector('.g_3 div');
+    let i=0;
+    
+    function skill(k)
+    {
+        loop = setInterval(function(){
+            if(i==k){
+                clearInterval(loop);
+                i=0;
+                return;
+            }
+            i++;
+            g3.style=`background:conic-gradient(from 0deg,#f00 ${i}%, #000 0%)`;
+        },10);
+    }
+    skill(90);
+    </script>
+
+
+
+
+
+
+</body>
+</html>
