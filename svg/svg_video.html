@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <style>
+        svg {
+            border: 1px solid #000;
+            width:100%; height:100vh;
+            position:absolute;
+            left:0; top:0;
+            z-index:1;
+        }
+        
+        svg rect{
+            fill:#fff;
+            width:100%; height:100vh;
+            
+        }
+        svg text{
+                text-anchor:middle;
+/*            svg text정렬시 
+            기준점을 기준으로 start, middle, end */
+            font-size:400px;
+            font-weight:bold;
+            }
+
+    </style>
+    <svg>
+  
+   
+    <defs>
+    <mask id="vdo">
+     <rect x=0 y=500 />
+<!--     흰색영역-->
+    <text x="50%" y="900" font-size="200">
+        video
+    </text>
+    </mask>
+    </defs>
+     <rect mask="url(#vdo)" x=0 y=0 />
+    </svg>
+    <video autoplay loop muted>
+        <source src="../daon/img/main/water.mp4" type="video/mp4">
+    </video>
+    
+    
+    <style>
+        .css_vdo{
+            width:100%; height:100vh;
+            
+        }
+        .css_vdo video{
+            width:100%; height:100%;
+/*
+            clip-path:
+                path(d:'M333.5,162.5c-26.32,30.59-107.2,132.35-90,255c25.52,181.99,250.65,293.46,431,280
+	c220.12-16.42,423.8-222.67,399-394c-13.25-91.49-87.75-146.12-105-158c-135.95-93.63-348.91-34.21-429,79
+	c-48.05,67.92-46.05,152.07-68,151c-25.21-1.23-21.02-111.9-108-190C351.51,174.73,340.62,167.13,333.5,162.5z');
+*/
+        }
+    </style>
+    <div class="css_vdo">
+        <video autoplay loop muted>
+        <source src="../daon/img/main/water.mp4" type="video/mp4">
+    </video>
+    </div>
+</body>
+
+</html>

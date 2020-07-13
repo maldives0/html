@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+</head>
+
+
+<body>
+
+
+    <style>
+        li{
+            padding:20px;
+            border-bottom:1px solid #ddd;
+        }
+        label{
+            width:60px; height:20px;
+            border:1px solid #000;
+            display:inline-block;
+            vertical-align:middle;
+            border-radius:10px;
+            background:#ddd;
+        position:relative;
+        }
+        label i{
+/*            기울기 이텔릭체*/
+            display:inline-block;
+            position:absolute;
+            width:20px; height:20px;
+            background: #fff;
+            border-radius: 10px;
+            left:0%; top:0;
+            box-shadow: 2px 2px 3px rgba(0,0,0,0.2)
+            
+        }
+        input:checked + label{
+            background:#f00;
+        }
+/*        +는 input 바로 밑에 있는 label를 말한다*/
+          #on1:checked + label i,
+          #on2:checked + label i,
+          #on3:checked + label i,
+        #on4:checked + label i{
+           
+            left:100%;
+        }
+    </style>
+
+    <div class="slide">
+       <ul>
+           <li>
+               radio를 이용한 on off 설정
+               <span>
+                   <input type="radio" name="on" id="on1" checked>
+                   <label for="on1">
+                       <i></i>
+                   </label>
+               </span>
+           </li>
+           <li>
+               radio를 이용한 on off 설정
+              <span>
+                   <input type="radio" name="on" id="on2">
+                   <label for="on2">
+                       <i></i>
+                   </label>
+               </span>
+           </li>
+            <li>
+               radio를 이용한 on off 설정
+              <span>
+                   <input type="radio" name="on" id="on3">
+                   <label for="on3">
+                       <i></i>
+                   </label>
+               </span>
+           </li>
+            <li>
+               radio를 이용한 on off 설정
+              <span>
+                   <input type="radio" name="on" id="on4">
+                   <label for="on4">
+                       <i></i>
+                   </label>
+               </span>
+         
+       </ul>
+    </div>
+
+
+</body></html>

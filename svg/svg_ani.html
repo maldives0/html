@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/transform3d.css" text="text/css">
+</head>
+
+<body>
+
+<style>
+    svg{border:1px solid #000;
+    }
+    svg path{
+        stroke-dasharray:4000px;
+        stroke-dashoffset:3900px;
+        animation:dash 4s forwards;
+/*        이름 dash 4초 뒤에 forwards멈춰라*/
+       
+        }
+     @keyframes dash{
+            100%{
+                 stroke-dashoffset:0px;
+            }
+         .star{}
+         .star .st0 path{
+             stroke-dasharray:4000px;
+        stroke-dashoffset:4000px;
+        animation:star 4s forwards;
+         }
+         .star .st1 path{
+             stroke-dasharray:4000px;
+        stroke-dashoffset:4000px;
+        animation:unstar 4s forwards;
+         }
+          @keyframes star{
+            100%{
+                 stroke-dashoffset:0px;
+            }
+               @keyframes unstar{
+            100%{
+                 stroke-dashoffset:0px;
+            }
+    }
+    </style>
+<svg 
+	 viewBox="0 0 1051.68 549.87" 
+	 width="1051.68" height="549.87">
+<style type="text/css">
+/*	.st0{fill:none;stroke:#000000;stroke-miterlimit:10;}*/
+</style>
+<path  fill="none" stroke="#000000" d="M46.37,51.32c-36.12,75.31-55.58,130.57-41,141c31.4,22.47,202.89-175.9,219-162
+	c10.29,8.88-50.57,97.64-74.88,133.11C84.22,258.62,41.12,302.47,46.37,308.32c15.17,16.92,360.11-366.83,478-300
+	c109.22,61.92,32.73,515.82-101,540c-96.36,17.43-224.64-187.86-194-227c36.7-46.89,274.43,179.26,568,127
+	c109.38-19.47,194.54-71.9,254-119"/>
+</svg>
+<img src="sign.svg" alt="">
+
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg class="star" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1243.83 302.97" style="enable-background:new 0 0 1243.83 302.97;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;}
+	.st1{fill:#FCEE21;stroke:#000000;stroke-miterlimit:10;}
+</style>
+<path class="st0" d="M0.41,141.52c39.67-58.88,95.09-120.9,157-117c73.67,4.64,86.29,98.2,172,119c103.5,25.12,148.31-95.97,272-92
+	c132.74,4.26,158.51,146.19,272,141c135.76-6.21,215.94-214.63,272-190c41.1,18.06,20.66,140.02,55,147c14.4,2.93,30.68-15.93,43-34
+	"/>
+<polygon class="st1" points="1173.91,302.02 1101.38,258.58 1024.47,293.71 1043.37,211.3 986.2,149.01 1070.41,141.52 
+	1111.99,67.9 1145.14,145.68 1228,162.46 1164.27,218.03 "/>
+</svg>
+
+</body></html>

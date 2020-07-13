@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+</head>
+<style>
+    .slide input {
+        display: none;
+
+    }
+
+    .slide {
+        width: 600px;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .slide .imgs {
+        width: 100%;
+        height: 430px;
+        border: 10px solid #000;
+        /*        display:flex;*/
+        /*        각 베너의 위치를 지정할 수 없다;*/
+        box-sizing: border-box;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .slide .imgs img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        /*        float:left;*/
+        margin-right: 50px;
+        opacity: 0;
+        transition: .5s;
+
+    }
+
+
+    .slide .indi {
+        text-align: center;
+
+    }
+
+    .slide .indi label {
+        width: 10px;
+        height: 10px;
+        display: inline-block;
+        border: 2px solid #000;
+        border-radius: 100%;
+
+    }
+
+    .slide .indi label:hover,
+    .slide .indi label:active {
+        background: #000;
+
+    }
+
+    #pos1:checked~.indi label:nth-of-type(1),
+    #pos2:checked~.indi label:nth-of-type(2),
+    #pos3:checked~.indi label:nth-of-type(3),
+    #pos4:checked~.indi label:nth-of-type(4) {
+        background: #000;
+    }
+
+    #pos1:checked~.imgs img:nth-of-type(1),
+    #pos2:checked~.imgs img:nth-of-type(2),
+    #pos3:checked~.imgs img:nth-of-type(3),
+    #pos4:checked~.imgs img:nth-of-type(4) {
+        opacity:1;
+    }
+
+    /*   ~는 checked가 위치하는 부분 밑 전체 다*/
+</style>
+
+<body>
+
+
+    <style>
+
+    </style>
+
+    <div class="slide">
+        <input type="radio" name="pos" id="pos1" checked>
+        <input type="radio" name="pos" id="pos2">
+        <input type="radio" name="pos" id="pos3">
+        <input type="radio" name="pos" id="pos4">
+        <div class="imgs">
+
+            <img src="../img/cam01.jpg" alt="">
+            <img src="../img/cam02.jpg" alt="">
+            <img src="../img/cam03.jpg" alt="">
+            <img src="../img/p02-05-05.jpg" alt="">
+
+        </div>
+
+        <div class="indi">
+            <label for="pos1"></label>
+            <label for="pos2"></label>
+            <label for="pos3"></label>
+            <label for="pos4"></label>
+            <!--id와 for가 연결된다-->
+        </div>
+    </div>
+
+
+</body></html>

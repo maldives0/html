@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+</head>
+<style>
+    .slide{width:600px;
+    margin:0 auto;
+    position:relative;}
+    
+    .slide .imgs{
+        width:100%;
+        height:430px;
+        border:10px solid #000;
+/*        display:flex;*/
+/*        각 베너의 위치를 지정할 수 없다;*/
+        box-sizing:border-box;
+       
+        overflow:hidden;
+    }
+    .slide .imgs figure{
+        margin:0;
+         position:relative;
+        height:100%;
+        left:0%;
+        transition:.5s;
+    }
+    .slide .imgs figure img{
+        position:absolute;
+        width:100%; height:100%;
+/*        float:left;*/
+        margin-right:50px;
+    }
+/*    html 작업은 javascript 사용시 absolute로 겹쳐놓는 것까지 함,
+    베너 추가 시 css를 일일이 수정해야함*/
+/*
+    .slide .imgs figure img:nth-of-type(1){
+        left:0%;
+    }
+    .slide .imgs figure img:nth-of-type(2){
+        left:100%;
+    }
+    .slide .imgs figure img:nth-of-type(3){
+        left:200%;
+    }
+    .slide .imgs figure img:nth-of-type(4){
+        left:300%;
+    }
+*/
+/*
+    .slide:hover .imgs figure{
+        left:-100%;
+        transition:.5s;
+    }
+*/
+    .slide .btn{
+        position:absolute;
+        left:0; top:calc(50% - 25px);
+/*        박스의 크기를 알 때 */
+        border:1px solid #f00;
+        width:100%;
+        transform:translateY(-50%);
+/*        박스의 크기를 모를 때 세로만 -50% 정렬*/
+        
+    }
+    .slide .btn a{
+        width:50px; height:50px;
+       
+        background:#fff;
+        box-shadow: 5px 0 5px rgba(0,0,0,0.4);
+        display:block;
+        opacity:0;
+        transition:.2s;
+    }
+    .slide .btn a:first-child{
+        float:left;
+         border-radius:0 100% 100% 0;
+            }
+    .slide .btn a:last-child{
+        float:right;
+         border-radius:100% 0 0 100%;
+    }
+    
+    .slide:hover .btn a{
+        opacity:1;
+    }
+    .slide:hover .btn a:hover{
+        background:#000;
+        color:#fff;
+         transition:2s;
+      
+    }
+    .slide .indi {
+        text-align:center;
+        
+    }
+    .slide .indi a{
+        width:10px; height:10px;
+        display:inline-block;
+        border:2px solid #000;
+        border-radius:100%;
+       
+    }
+    .slide .indi a:hover,
+    .slide .indi a:active{
+        background:#000;
+        
+    }
+    
+    </style>
+<body>
+
+
+    <style>
+
+    </style>
+
+    <div class="slide">
+        <div class="imgs">
+           <figure>
+            <img src="../img/cam01.jpg" alt="">
+            <img src="../img/cam02.jpg" alt="">
+            <img src="../img/cam03.jpg" alt="">
+           <img src="../img/cam01.jpg" alt="">
+           </figure>
+        </div>
+    
+
+    <div class="btn">
+        <a>prev</a>
+        <a>next</a>
+
+    </div>
+    <div class="indi">
+        <a></a>
+        <a class="active"></a>
+        <a></a>
+        <a></a>
+
+    </div>
+    </div>
+    <style>
+        .slide2{
+            width:600px;
+            margin:0 auto;
+             position:relative;
+        }
+        .slide2 .imgs{
+            width:100%;
+            height:400px;
+            border:10px solid #000;
+            box-sizing:border-box;
+                      overflow:hidden;
+            
+        }
+        .slide2 .imgs .fig{
+            margin:0;
+            height:100%;
+            position:relative;
+            left:0;
+        }
+         
+        .slide2 .imgs .fig figure{
+           margin:0;
+            position:absolute;
+            left:0;
+           width:100%;
+            height:100%;
+           
+            display:inline-block;
+            
+        }
+        
+        .slide2 .imgs .fig figure img{
+           width:100%; height:100%;
+         
+            
+        }
+        .slide2 .imgs .fig figure figcaption{
+            color:#fff;
+            width:100%; height:100%;
+            position:absolute;
+            left:0; bottom:0;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+    </style>
+    
+     <div class="slide2">
+        <div class="imgs">
+          <div class="fig">
+           <figure>
+            <img src="../img/cam01.jpg" alt="">
+            <figcaption>이미지 설명글</figcaption>
+            </figure>
+           <figure>
+            <img src="../img/cam02.jpg" alt="">
+            <figcaption>이미지 설명글</figcaption>
+            </figure>
+            <figure>
+            <img src="../img/cam03.jpg" alt="">
+            <figcaption>이미지 설명글</figcaption>
+            </figure>
+           </div>
+          
+        </div>
+    
+
+    <div class="btn">
+        <a>prev</a>
+        <a>next</a>
+
+    </div>
+    <div class="indi">
+        <a></a>
+        <a class="active"></a>
+        <a></a>
+        <a></a>
+
+    </div>
+    </div>
+
+</body></html>
