@@ -41,21 +41,24 @@ el.textContent = total + '$';
 var design;
 var html;
 var css;
+var degree;
+
 
 design = 80;
 html = 90;
 css = 70;
+degree =  if(90 =〈 average) = A, 
+  80 =〈 average =  B , 
+      70 =〈 average = C ;
 
 total = design + html + css;
 average = total / 3;
-degree = A = average 〉= 90,
- B = average 〉= 80,
-C = average 〉= 70;
+
 
 
 var el = document.getElementById('ex2');
-el.textContent = total + '점';
+el.textContent = total + '점' + ',';
+var el = document.getElementById('ex2');
+el.textContent += average + '점';
 var el = document.getElementById('ex3');
-el.textContent = average + '점';
-var el = document.getlementById('ex4');
 el.textContent = degree + '등급';
