@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+  <style>
+      .ic_bg{}
+      .ic_bg a{
+          background:url('../test/icon.png') no-repeat;
+          font-size:0;
+          width:15px; height:15px;
+          display:inline-block;
+/*          a는 인라인요소이므로 블럭으로 만들어줘야 아이콘이 보인다*/
+      }
+      .ic_bg a:nth-of-type(2){
+          background-position:-32px 0;
+      }
+      .ic_bg a:nth-of-type(3){
+          background-position:-70px 0;
+      }
+      
+/*
+      <!--
+   background는 padding으로 이동 X
+   background-position(위치이동), 
+   backgroudn-size(크기변경) 사용하기
+    
+-->
+*/
+      
+      .shadow{
+          width:500px; height:400px;
+          box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
+/*          x, y, blur, color*/
+      }
+      .shadow mark{
+          background:purple;
+          
+      }
+    </style>
+   <div class="ic_bg">
+       <a href="https://www.facebook.com/">facebook</a>
+       <a href="#">twitter </a>
+       <a href="#">instagram</a>
+   </div>
+   
+   
+   
+   <div class="shadow">
+       <mark>
+           you can
+       </mark>
+       get here
+   </div>
+   
+   
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+@import url(common.css);
+
+.wrap{
+    border:2px solid #f00;
+}
+heaer{
+    border:2px solid #f0f;
+    position:fixed !important;
+    left:0; top:0;
+    height:100%;
+    
+}
+main{
+    border:2px solid #00f;
+    float:right !important;
+    
+    
+}
+
+.col-md-4{
+    height:700px;
+}

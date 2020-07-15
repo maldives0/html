@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap');
+/*font-family: 'Playfair Display', serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
+/*font-family: 'Ubuntu', sans-serif;*/
+
+html,body{margin:0; 
+background:;}
+ul, li{margin:0; padding:0;
+list-style:none;}
+/*모든 ul, li는 모두 기본으로 다음의 속성값을 갖는다*/
+*{
+/*    mordern테그에 명령을 내리면 기본정의로서 강한 영향력을 갖는다 */
+    box-sizing:border-box;
+    
+    color:#626262;
+/*
+    font-size:14px;
+    font-family: 'Playfair Display', serif;
+    
+*/
+/*    명조를 기본 글꼴로 설정함*/
+font:14px 'Playfair Display', serif;
+}
+a{text-decoration:none;
+
+   }
+h2{
+    font-size:30px;
+    color:#626262;}
+
+/*margin*/
+.mt130{
+    margin-top:130px !important;
+/*    강조, 마진 값이 이미 있다면 130px로 우선 설정할 것*/
+    
+    }
+.mt100{
+    margin-top:100px !important;
+}
+    .mt80{
+    margin-top:80px !important;
+}
+    .mt50{
+    margin-top:50px !important;
+}
+    .mt30{
+    margin-top:30px !important;
+}
+    
+/*padding*/
+.p80{
+    padding:80px !important;
+}
+
+
+.f_center{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.f_list{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    
+}
+/*font*/
+.f_s1{
+    font-family: 'Ubuntu', sans-serif;
+    color:#b4ad9e;
+     
+}
+
+/*width*/
+.w-1060{
+    width:1060px; margin:0 auto;
+}
+/*w-1060_h-500
+- 연결짓기, _ 별개로 나누기*/
+
+/*conpont*/
+.cp_s1{
+    
+}
+.cp_s1 h2{
+    margin:30px 0;
+}
+.cp_s1 h2 small{
+    display:block;
+    margin-bottom:26px;
+    font-family: 'Ubuntu', sans-serif;
+    color:#b4ad9e;
+    text-transform:uppercase;
+}
+.cp_s1 p{
+    line-height:2;
+}
+.cp_s1 a{
+    display:inline-block;
+    margin-top:26px;
+     font-family: 'Ubuntu', sans-serif;
+    color:#b4ad9e;
+    text-transform:uppercase;
+}
+/*button*/
+.btn{
+    border:1px solid #626262;
+    padding:20px 34px;
+    display:inline-block;
+    text-transform:capitalize;
+}
+
+/*align*/
+.center{
+    text-align:center;
+}
+
+/*header*/
+header{
+    
+    padding:70px 0;
+/*    margin으로 넣지 않는다*/
+}
+header div{
+    width:1060px;
+    margin:0 auto;
+}
+
+header div nav a{
+    display:inline-block;
+    padding:0 40px;
+    text-transform:uppercase;
+/*    대문자로 바꾸기*/
+    
+}
+/*footer*/
+footer{
+    text-align:center;
+    padding:20px 0;
+        background:#f0f0f0;
+    margin-top:100px;
+}

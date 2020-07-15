@@ -1,0 +1,73 @@
+@import url('/site3/common.css');
+
+
+
+
+.cp_s1{
+    
+}
+.cp_s1 h2{
+    margin:30px 0;
+}
+.cp_s1 h2 small{
+    display:block;
+    margin-bottom:26px;
+    font-family: 'Ubuntu', sans-serif;
+    color:#b4ad9e;
+    text-transform:uppercase;
+}
+.cp_s1 p{
+    line-height:2;
+}
+.cp_s1 a{
+    display:inline-block;
+    margin-top:26px;
+     font-family: 'Ubuntu', sans-serif;
+    color:#b4ad9e;
+    text-transform:uppercase;
+}
+
+.f_list{
+    width:1060px; margin:0 auto;
+    padding:0 80px;
+    
+}
+.f_list li{
+    width:45%;
+    padding-bottom:100px;
+}
+.f_list li p img{
+    width:100%;
+}
+
+/*letter*/
+.letter{
+    background-color:#f0f0f0;
+    padding:70px 0;
+    text-align:center;
+    
+}
+.letter h2{}
+.letter span{
+    display:inline-block;
+    border-bottom:1px solid black;
+        padding:80px 0 10px 0; 
+}
+.letter span input[type='email']{
+    border:none;
+    background:none;
+    width:400px;
+    outline-style:none;
+}
+.letter span input[type='submit']{
+    border:none;
+    font-size:0;
+    background:url(img/btn_newsletter.png) no-repeat;
+    width:32px; height:17px;
+    outline-style:none;
+/*    선택시 외각 선 없애기 */
+    cursor:pointer;
+/*    커서의 모양을 지정함*/
+}
+
+

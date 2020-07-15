@@ -1,0 +1,14 @@
+html,body{margin:0; 
+background:#b6daeb;}
+ul, li{margin:0; padding:0;
+list-style:none;}
+/*모든 ul, li는 모두 기본으로 다음의 속성값을 갖는다*/
+*{
+/*    mordern테그에 명령을 내리면 기본정의로서 강한 영향력을 갖는다 */
+    box-sizing:border-box;
+}
+a{text-decoration:none;
+/*밑줄 빼고 시작*/
+    color:#555;}
+
+h1,h2,h3,h4,h5,h6,p{margin:0; padding:0;}

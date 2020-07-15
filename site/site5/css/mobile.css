@@ -1,0 +1,86 @@
+@import url(common.css);
+
+header{
+
+  
+}
+header > div{
+    position:fixed ;
+      border:1px solid #000;
+    background:#fff799;
+    padding:3%;
+}
+header .up{
+    
+    padding:10px;
+    
+    width:200px;
+    margin:0 auto;
+    
+}
+header .up h6{
+   
+    font-size:15px;
+}
+header h2{
+    margin-bottom:30%;
+     text-align:center;
+}
+   header ul{ margin-bottom:30%;
+ text-align:center;}
+header ul li{
+    padding:5%;
+}
+
+header .do {padding:5%;}
+header .do h6 {font-size:15px;
+margin-bottom:20%;}
+header .do p{ 
+    font-size:.5em;
+    text-align:right;}
+
+main{
+}
+main ul{
+    display:inline-block;
+   
+}
+main ul li{
+    background:#fbf8cf;
+    width:460px;
+height:650px;
+border:1px solid #000;
+border-radius:10%;
+display:inline-block;
+    
+}
+main ul li > p{
+    margin:10% auto;
+    text-align: center;
+}
+main ul li img{
+    
+    
+    width:350px; height:258px;
+
+}
+main ul li span{
+    
+}
+main ul li span p{
+    white-space: pre-line;
+}
+main ul li span p strong{
+    font-size:3em;
+}
+
+main .stock{
+    
+    
+}
+main .stock span{white-space: pre-line;
+line-height: 2;}
+main .stock span p:nth-of-type(2){
+    border-bottom:1px dashed #000;
+}
+main .stock span p strong{font-size:2em;}

@@ -1,0 +1,166 @@
+@import url('common.css');
+
+header{}
+header > div{
+/*   > 헤더 바로 밑 자손만 명령을 내린다*/
+    width:1170px; 
+    margin:70px auto;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+   
+    
+}
+header div h1{}
+header div h1 a{}
+header div nav{}
+header div nav ul{
+/*    flex는 메뉴구조가 복잡해지면 알아서 정렬해주어 에러가 나타날 수 있다*/
+    
+}
+header div nav ul li{
+    display: inline-block;
+/*    정렬방식을 선택하지 않으면 하단 정렬된다*/
+    vertical-align:top;
+   
+    position:relative;
+/*    기존 모습대로 좌표값이 있다*/
+}
+header div nav ul li > a{
+   padding:20px;
+/*    글자 근처에만 마우스를 올려놔도 해당되게 만든다
+    */
+    display:inline-block;
+/*    a테그는 인라인요소이므로 li의 값이 padding을 넣은 자식 a보다 작아지는 오류가 나타난다*/
+}
+/*>를 넣지 않으면 li안에 있는 모든 a를 말한다*/
+header div nav ul li div{
+     border:1px solid #000;
+    border-bottom:none;
+    position:absolute;
+    left:10px; top:120%;
+/*    마우스를 호버했을 때 a크기와 div크기 사이에 빈공간을 만들지 않게 하기위해 98%로 약간 겹치게 한다*/
+    background:rgba(255,255,255,0.6);
+    opacity:0;
+    transition:.9s;
+    width:100%;
+/*    absolute는 width를 따로 설정해주지 않으면 부모 콘텐츠 크기만큼만 갖게 된다*/
+   
+}
+header div nav ul li:hover div{
+    opacity:1;
+top:98%}
+
+header div nav ul li div a{
+     display:block;
+       padding:5px;
+    border-bottom:1px solid #000;
+}
+
+
+.menu-trigger {
+	
+}
+.menu-trigger,
+.menu-trigger span {
+	display: inline-block;
+	transition: all .4s;
+	box-sizing: border-box;
+}
+
+.menu-trigger {
+	position: relative;
+	width: 30px;
+	height: 26px;
+/*    transform:scale(0.6);*/
+/*    모양 전체의 크기를 조절할 수 있다
+    라인이 흐릿해진다*/
+}
+
+.menu-trigger span {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background-color: #000;
+	border-radius: 4px;
+}
+
+.menu-trigger span:nth-of-type(1) {
+	top: 0;
+    
+}
+
+.menu-trigger span:nth-of-type(2) {
+	top: 50%;
+    transform:translateY(-50%);
+    width:70%;
+}
+
+.menu-trigger span:nth-of-type(3) {
+	bottom: 0;
+    width:85%;
+}
+
+
+main{}
+
+.spot{width:100%;
+height:750px;
+background:url('../test/clare_blue.jpg') no-repeat;
+}
+.spot article{
+    width:900px;
+    background:#fff;
+    margin: 0 auto;
+    padding:50px 60px;
+    position:relative;
+    top:30%;
+    box-shadow:0 0 20px rgba(0,0,0,0.4);
+}
+.spot article h2{}
+/*이미 h2가 height를 가지고 있으며 span은 그 아래 자식요소로 있다 그래서 float값은 span에만 해당되게 된다 */
+.spot article h2 span{
+float:right;
+    font-size:0;
+}
+.spot article h2 span a{
+    width:15px; height:15px;
+    background:url('../test/icon.png') no-repeat;
+    display:inline-block;
+/*
+    width나 height값이 들어가려면 block으로 바꿔야 함*
+    /
+*/
+    
+    margin:0 5px;
+}
+.spot article h2 span a:nth-of-type(1){
+    background-position:3px 0;
+}
+.spot article h2 span a:nth-of-type(2){
+    background-position:-33px 0;
+}
+.spot article h2 span a:nth-of-type(3){
+    background-position:-73px 0;
+}
+    
+.spot article figure{
+    margin:0;
+}
+원래 피겨에 여백이 있다
+.spot article figure p{
+    margin:100px 0;
+}
+.spot article figure p img{
+    width:100%;
+}
+
+.spot article figure figcaption{
+    white-space:pre-line;
+}
+.spot article figure figcaption strong{}
+.spot article figure figcaption a{}
+.spot article figure figcaption a mark{
+    background:#fed38e;
+}

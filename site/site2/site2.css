@@ -1,0 +1,155 @@
+@import url('common.css');
+
+body {
+   
+}
+
+header {
+    margin:0 auto;
+    padding:40px;
+    width: 1108px;
+        display:flex;
+        justify-content:space-between;
+    align-items:top;
+}
+header > a {
+    width: 178px;
+    height: 40px;
+    display:inline-block;
+}
+
+header nav {
+    width: 455px;
+       
+    display:flex;
+    justify-content:space-between;
+    vertical-align:top;
+}
+
+header nav a{
+    font-family: OpenSans;
+  font-size: 20px;
+    display:inline-block;
+          
+    
+}
+header nav a:hover{
+    border-bottom:5px solid #000;
+   
+}
+.banner{
+     width: 1140px;
+    height: 550px;
+        background:url('img/banner.jpg') no-repeat;
+       margin:77px auto;
+     display:flex;
+        justify-content:center;
+    align-items:center;
+    position:relative;
+    }
+
+.banner p{   
+         text-align:center;
+    width: 524px;
+   
+   
+}
+.banner p strong{
+    font-family: OpenSans;
+  font-size: 90px;
+    color:white;
+    white-space:pre-line;
+   
+}
+
+
+.banner aside{
+    
+     font-family: OpenSans;
+    position:absolute;
+    left:-10%; bottom:20%;
+    transform:rotate(-90deg);
+}
+.banner aside img{
+     position:absolute;
+    left:-15%; bottom:5%;
+     transform:rotate(90deg);
+}
+.sub{
+    width:1140px;
+         display:flex;
+    justify-content:space-around;
+    align-content: center;
+     margin: 351px 16%;
+     padding:0;
+}
+.sub article {
+    width: 1108px;
+    margin:0;
+    padding:0;
+  vertical-align:center;
+   
+     
+}
+
+.sub article h1 {
+    width: 351px;
+  font-family: OpenSans;
+  font-size: 60px;
+    margin:0 0 41px 0;
+}
+
+.sub article p {
+   
+    width: 367px;
+   height: 45px;
+     font-family: OpenSans;
+  font-size:15px;
+    overflow: hidden;
+     margin: 0 0 36px 0;
+}
+
+.sub article a {
+    width: 99px;
+       border-bottom:1px solid black;
+     font-family: MyriadPro;
+  font-size: 20px;
+
+}
+
+.sub figure {
+    margin: 0;
+    padding:0;
+    }
+
+.sub figure img {
+    width: 540px;
+    height: 260px;
+    
+}
+
+.sub figure figcaption {
+        
+     text-align:right;
+}
+
+
+.sub figure figcaption strong{
+     font-family: OpenSans;
+    font-size: 25px;}
+  
+footer {
+  
+   
+    background: #434343;
+    border: 1px solid #959595;
+}
+
+footer p {
+   
+        margin: 37px auto;
+    text-align: center;
+    color: #bcbcbc;
+    font-family: MyriadPro;
+    font-size: 12px;
+}

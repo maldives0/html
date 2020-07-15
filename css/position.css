@@ -219,9 +219,9 @@ content:'';
     left:35%; top:-30px;
     
    width:0; height:0;
-    border:10px solid ;
+    border:10px transparent;
 /*    transparent투명*/
-    border-bottom:0px solid #0f0;
+    border-bottom:5px solid #0f0;
     
 /*  문자면  line-height값이 적용됨*/
     transition:.3s;

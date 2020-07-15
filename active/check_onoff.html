@@ -38,14 +38,22 @@
         }
         input:checked + label{
             background:#f00;
+           
         }
 /*        +는 input 바로 밑에 있는 label를 말한다*/
+/*
           #on1:checked + label i,
           #on2:checked + label i,
           #on3:checked + label i,
         #on4:checked + label i{
            
             left:100%;
+        }
+*/
+        input:checked +label i{
+            left:100%;
+            transform:translateX(-100%);
+            transition:.4s;
         }
     </style>
 

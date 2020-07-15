@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+/*font-family: 'Nanum Myeongjo', serif;*/
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+/*font-family: 'Raleway', sans-serif;*/
+
+html,body{margin:0; 
+}
+ul, li{margin:0; padding:0;
+list-style:none;}
+/*모든 ul, li는 모두 기본으로 다음의 속성값을 갖는다*/
+*{
+/*    mordern테그에 명령을 내리면 기본정의로서 강한 영향력을 갖는다 */
+    box-sizing:border-box;
+}
+a{text-decoration:none;
+/*밑줄 빼고 시작*/
+    }
+
+h1{margin:0; padding:0;}
+
+.f_c{
+     display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.f_a{
+     display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.f_p{
+font-family: 'Raleway', sans-serif;
+    line-height: 2;
+     font-size: 25px;}
+.f_h2{
+      font-size:3em;
+    text-transform:uppercase;
+    font-family: 'Nanum Myeongjo', serif;
+}
