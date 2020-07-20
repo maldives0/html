@@ -26,6 +26,7 @@ var comData;
         switch(com){
             case 0:
                 comData = '주먹'; break;
+                //break는 값을 계속 변화시켜라
             case 1:
                 comData = '가위'; break;
            
@@ -41,9 +42,10 @@ var comData;
         //                comData = '보';
         //            }
     
-     var arr = ['수박', '참외','복숭아','사과','딸기'];
+     var arr = ['수박', '참외','복숭아','사과','딸기','키위'];
      
         var len = arr.length;
+//        len은 arr의 갯수가 변할 때마다 다른 값을 가진다
         console.log(len);
       var arrIdx = Math.floor(Math.random() * len);
         console.log(arr[arrIdx]);

@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <link rel="stylesheet" href="css/table.css" text="text/css">
+
+    <link href="css/table.css" rel="stylesheet" type="text/css">
+
 </head>
 
 <body>
 
-    <table>
+    <table class="t_1">
         <tr>
             <th>번호</th>
             <th>수강생명</th>
-
         </tr>
         <tr>
             <td>01</td>
@@ -20,10 +22,90 @@
         </tr>
         <tr>
             <td>02</td>
-            <td>곽현아</td>
+            <td>곽현하</td>
         </tr>
     </table>
 
 
 
+
+    <table class="t_2">
+        <!--
+    <colgroup>
+        <col width="200">
+        <col width="*">
+        <col width="300">
+    </colgroup>
+-->
+
+        <caption>테이블 제목</caption>
+        <thead>
+            <tr>
+                <th>번호</th>
+                <th>제목</th>
+                <th>날짜</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>01</td>
+                <td>
+                    <p>
+                        공지사하입니다.
+                        공지사하입니다.
+                        공지사하입니다.
+                        공지사하입니다.
+                        공지사하입니다.
+                        공지사하입니다.
+                        공지사하입니다.
+                        공지사하입니다.
+                    </p>
+                </td>
+                <td>2020-06-17</td>
+            </tr>
+            <tr>
+                <td>02</td>
+                <td>자유게시판입니다.</td>
+                <td>2020-06-17</td>
+            </tr>
+        </tbody>
+        <tfoot></tfoot>
+    </table>
+
+
+
+    <table class="t_3" border="1">
+        <tr>
+            <td colspan="2">1,2</td>
+            <!--<td>2</td>-->
+            <td rowspan="4">3,6,9,12</td>
+        </tr>
+        <tr>
+            <td colspan="2">4,5</td>
+            <!--<td>5</td>
+            <td>6</td>-->
+        </tr>
+        <tr>
+            <td rowspan="2">7</td>
+            <td>8</td>
+<!--            <td>9</td>-->
+        </tr>
+        <tr>
+            <!--<td>10</td>-->
+            <td>11</td>
+<!--            <td>12</td>-->
+        </tr>
+    </table>
+
+
+
+
+
+
+
 </body></html>
+
+
+
+
+
