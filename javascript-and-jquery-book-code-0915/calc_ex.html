@@ -31,14 +31,17 @@
 
 
     <script>
-    var ex_1 =document.querySelector('.ex_1');
+    var ex_1 =document.querySelector('.ex_1 div');
         ex_1.textContent = 20 + 20;
         ex_1.textContent *= 40;
         ex_1.textContent /= 2;
-        ex_1.textContent /= 4 ;
-        ex_1.textContent += '$';
         
-        var ex_3 =document.querySelector('.ex_3');
+        var ex_2 =document.querySelector('.ex_2 div');
+        
+       
+        ex_2.innerHTML = ex_1 +200+'$';
+        
+        var ex_3 =document.querySelector('.ex_3 div');
         if(20 != 10){
             ex_3.textContent = '통과';
         }else{
