@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>화면전환</title>
+    <link rel="stylesheet" href="style.css" text="text/css">
+</head>
+
+<body class="">
+    <header>
+        <a href="index.html">메인화면</a>
+        <a href="sub.html">서브화면</a>
+
+    </header>
+    <main role="main">
+        <img src="../img/cam01.jpg" alt="">
+        <!--
+       -webkit-gradient:
+       사파리에서 자신의 브라우저를 말할 때 접두어
+       -moz-gradient:
+       파이어폭스 모질라계열
+       -ms-gradient:
+       마이크로 소프트
+       -o-gradient:
+       오페라
+-->
+    </main>
+    <script>
+        var body = document.querySelector('body');
+        var menu = document.querySelectorAll('a');
+        setTimeout(function() {
+            body.classList.add('active');
+        }, 10);
+        //       0.01초의 사이를 두고 클래스를 추가한다
+
+        menu[1].addEventListener('click', function(e) {
+            e.preventDefault();
+            //            해당테그의 기능을 빼앗는다
+            body.classList.remove('active');
+            setTimeout(function() {
+                location.href = menu[1].href;
+            }, 1000);
+            //            1초후에 명령을 실행시켜라
+
+        });
+         menu[0].addEventListener('click', function(e) {
+            e.preventDefault();
+            //            해당테그의 기능을 빼앗는다
+            body.classList.remove('active');
+            setTimeout(function() {
+                location.href = menu[0].href;
+            }, 1000);
+            //            1초후에 명령을 실행시켜라
+
+        });
+    </script>
+
+</body></html>

@@ -1,0 +1,20 @@
+*{text-align:center;}
+body.active header,
+body.active main{
+    opacity:1;
+    margin-top:0;
+
+}
+body header,
+body main{
+   
+    transition:1s;
+/*    변형속도, 딜레이*/
+    
+}
+header{
+    opacity:0;
+    margin-top:-100px;
+}
+main{opacity:0;
+margin-top:200px;}
