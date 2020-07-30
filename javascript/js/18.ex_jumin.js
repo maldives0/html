@@ -10,27 +10,25 @@ function init() {
      var back = b.value;
     
     
-   var arr = [front[0]+","+front[1]+","+front[2]+","+front[3]+","+front[4]+","+front[5]+","];
       
-    
-    function jumin() {
+    function jumin(a,b) {
         gender();
-        
-           
+       
       
  
         var total = 0;
         for (var i in a) {
  
-          
+           a = front[i];
+         b = back[i];  
       
             
-            total +=  arr[i] * key[i];
+            total +=  a * b;
            
         }
         var cNum = 11 - (total % 11);
 
-        if (cNum == key[12]) {
+        if (cNum == back[12]) {
             result.textContent = "정상적인 주민번호입니다.";
 
         } else {
@@ -41,7 +39,7 @@ function init() {
     }
 
     function gender() {
-        var gen = key;
+        var gen = back;
         var aa = gen[0] == "1" ? "남" : "여";
         result.innerHTML += '성별:' + aa;
         //  삼합연산자: if문을 한 줄로 표현한다
