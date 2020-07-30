@@ -1,23 +1,32 @@
 function init() {
     //주민 유효성 검사
-    var j01 = document.querySelector('.ex_jumin input[name=j01]');
-    var j02 = document.querySelector('.ex_jumin input[name=j02]');
+    var f = document.querySelector('.ex_jumin input[name=j01]');
+    var b = document.querySelector('.ex_jumin input[name=j02]');
     var result = document.querySelector('.ex_jumin div');
    
-    var arr = j01.value;
-console.log(arr);
-    var key = j02.value;
-
     
-    var a = arr + key;
-
-
+      var front = f.value;
+            
+     var back = b.value;
+    
+    
+   var arr = [front[0]+","+front[1]+","+front[2]+","+front[3]+","+front[4]+","+front[5]+","];
+      
+    
     function jumin() {
         gender();
+        
+           
+      
+ 
         var total = 0;
         for (var i in a) {
-
-            total += arr[i] * key[i];
+ 
+          
+      
+            
+            total +=  arr[i] * key[i];
+           
         }
         var cNum = 11 - (total % 11);
 
