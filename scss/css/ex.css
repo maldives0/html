@@ -1,0 +1,90 @@
+@import url("common.css");
+.p ul, footer, footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.p ul li span, footer ul li span {
+  font-size: 5px;
+  line-height: 2;
+}
+
+.p {
+  width: 100vw;
+  margin: 0 auto;
+}
+
+.p h2 {
+  text-align: center;
+  margin: 5% 0;
+}
+
+.p ul {
+  width: 60%;
+  margin: 5% auto;
+}
+
+.p ul li {
+  width: 30%;
+}
+
+.p ul li span {
+  width: 300px;
+  white-space: pre-line;
+}
+
+.p ul li h4 {
+  font-size: 20px;
+}
+
+.p ul li p {
+  margin: 2% 0;
+  width: 300px;
+  height: 150px;
+}
+
+.p ul li:nth-of-type(1) p {
+  background: url(../img/img_01.jpg) center no-repeat;
+  background-size: 100%;
+}
+
+.p ul li:nth-of-type(2) p {
+  background: url(../img/img_02.jpg) center no-repeat;
+  background-size: 100%;
+}
+
+.p ul li:nth-of-type(3) p {
+  background: url(../img/img_03.jpg) center no-repeat;
+  background-size: 100%;
+}
+
+footer {
+  background: #004986;
+  width: 100vw;
+  height: 30vh;
+}
+
+footer ul {
+  width: 100%;
+}
+
+footer ul li {
+  margin-right: 5%;
+}
+
+footer ul li h1 {
+  color: #fff;
+}
+
+footer ul li span {
+  color: #fff;
+  display: block;
+}
+/*# sourceMappingURL=ex.css.map */
