@@ -1,0 +1,65 @@
+@charset "UTF-8";
+@import url("common.css");
+$dark: #000;
+$white: #f00;
+@mixin after($d, $p, $c) {
+    &:after {
+        content: $c;
+        display: $d;
+        padding: 0 #{$p}px;
+    }
+}
+
+header {
+    background: $dark;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    h1 {
+        color: $white;
+    }
+    nav {
+        a {
+            color: $white;
+            @include after(inline-block, 10, "·");
+        }
+        a:last-of-type {
+            @include after(inline-block, 0, "");
+        }
+    }
+}
+
+
+%f-s1 {
+    font-size: 1.2em;
+    line-height: 2;
+}
+.list {
+    h2 {
+    }
+    ul {
+        li {
+            span {
+                @extend %f-s1;
+            }
+            // 명령은 한번 처리되고 선택자가 2개 선택되어짐, %는 우선은 명령어가 취급되지 않다가 extend에서 호출하면 실행됨
+            p {
+                @extend %f-s1;
+            }
+
+            padding: 20px 0 20px 130px;
+            border-top: 1px solid #000;
+        }
+
+        @for $i from 1 through 3 {
+            //to내가 만들고 싶은 개수보다 하나 더 많다 
+            li:nth-of-type(#{$i}) {
+                background: url("../img/img_0#{$i}.jpg") left center no-repeat;
+                background-size: 100px;
+            }
+        }
+    }
+}
+
+@import "_media";
+//이름 앞에 '_'를 넣고 import하면 컴파일을 안시킨다

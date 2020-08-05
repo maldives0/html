@@ -1,0 +1,73 @@
+@charset "UTF-8";
+@import url("common.css");
+$blue: #004986;
+
+%f_c {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+%f {
+    font-size: 5px;
+    line-height: 2;
+}
+.p {
+    width: 100vw;
+    margin: 0 auto;
+    h2 {
+        text-align: center;
+        margin: 5% 0;
+    }
+    ul {
+        @extend %f_c;
+        width: 60%;
+        margin: 5% auto;
+        li {
+            width: 30%;
+            span {
+                width:300px;
+                @extend %f;
+                white-space: pre-line;
+            }
+            h4 {
+                font-size: 20px;
+            }
+            p {
+                margin: 2% 0;
+                width: 300px;
+                height: 150px;
+               
+            }
+           
+           
+        }
+        @for $i from 1 to 4{
+            li:nth-of-type(#{$i}) p{
+                background:url(../img/img_0#{$i}.jpg) center no-repeat;
+                background-size:100%;
+            }
+        }
+    }
+}
+footer {
+    background: $blue;
+    width: 100vw;
+    height:30vh;
+    @extend %f_c;
+    ul {
+        width:100%;
+        @extend %f_c;
+        li {
+            margin-right: 5%;
+
+            h1 {
+                color: #fff;
+            }
+            span {
+                @extend %f;
+                color: #fff;
+                display: block;
+            }
+        }
+    }
+}
