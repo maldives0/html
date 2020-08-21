@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <style>
+        svg {
+            border: 1px solid #000;
+        }
+
+        .mask_1 {
+            width: 600px;
+            height: 400px;
+            
+            clip-path: polygon(54% 2%, 91% 21%, 75% 51%, 70% 86%, 48% 64%, 13% 81%, 20% 46%, 12% 14%);
+            
+            animation: clip 1s infinite alternate;
+        }
+
+        @keyframes clip{
+            0%{}
+            100%{
+                clip-path: polygon(53% 41%, 91% 21%, 93% 66%, 72% 93%, 38% 93%, 14% 79%, 7% 47%, 23% 9%);
+            }
+        }
+        
+        
+
+    </style>
+
+    <article>
+        <h1>1.Clip-Path</h1>
+        <img src="../img/img_02.jpg" class="mask_1">
+    </article>
+
+
+
+
+
+
+    <article>
+        <h1>2.mask</h1>
+        <svg viewBox="0 0 600 400" width="600" height="400">
+            <defs>
+                <mask id="mk">
+                    <polygon fill="#fff" points="402.25,339.85 302.34,289.5 204.22,343.25 221.23,232.67 139.79,155.96 250.22,137.98 298,36.81 
+	349.23,136.28 460.21,150.46 381.45,229.92 " />
+                </mask>
+            </defs>
+
+            <image mask="url(#mk)" xlink:href="../img/img_02.jpg" width="600"/>
+
+        </svg>
+
+
+    </article>
+    
+    
+    
+    <article>
+        <h1>3.mask-text</h1>
+        <svg viewBox="0 0 600 400" width="600" height="400">
+            <defs>
+                <mask id="m-txt">
+                    <text x=0 y=200 fill="#fff" font-size="100" font-weight="bold">
+                        MASK-TEXT
+                    </text>
+                </mask>
+            </defs>
+            
+            <image mask="url(#m-txt)" xlink:href="../img/img_02.jpg" width="600"/>
+            
+        </svg>
+    </article>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
