@@ -23,7 +23,7 @@ article div{
     색상범위 (#f00 50%, #000 40%)*/
 }
 .g_2 div{
-      background:radial-gradient(ellipse at 0% 100%, #f00, #000);
+      background:radial-gradient(ellipse at 50% 0%, #f00, #000);
      height:200px;
 /*    circle, ellipse(해당 도형의 크기만큼 그라데이션을 줌)
     at
